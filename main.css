@@ -5,5 +5,35 @@
     background-color: #f3f2f2;
     color: rgb(20, 20, 20);
  }
+ .main { margin-left: 150px;
+padding: 0px,10px;
 
+}
  
+ .sidenav {
+background-color: rgb(78, 4, 6);
+overflow:hidden; 
+ }
+ .sidenav{
+float:inline-start; 
+color:beige;
+text-align:center;
+height:100%; 
+width: 125px;
+position:fixed;
+text-decoration: none;
+font-size: 17px;
+padding-top: 20px;
+}
+
+.sidenav a{ 
+   padding: 10, 10, 10,10; 
+   text-decoration: none;
+   font-size: 17px;
+   color:beige;
+   display:block;
+   Height: 65px;
+   }
+.sidenav a:hover{
+color:blue; 
+}

@@ -1,5 +1,7 @@
 const scrollToTopBtn =document.getElementById("scrollToTopBtn");
 
+const scrollToTopBtn =document.getElementById("scrollToTopBtn");
+
 window.onscroll= function() {
      
 if (document.body.scrollTop > 100  ||
@@ -31,3 +33,5 @@ function closeNav() {
     document.getElementById("mySidenav").style.width="0";
 
 }
+
+

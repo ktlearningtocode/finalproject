@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="main.css"> 
- <header> <div id="content">
-  <div class="topnav">
+    <link rel="stylesheet" href="style.css"> 
+ <header> 
+    <div class="sidebar">
 <a class="active" href= "index.html">Back to Homepage</a> 
   <a href="second_page.html"> Deeper look into CTI</a>
- <a href="loginsignuporcontactUs.html"> Login or sign up</a>
-<body>
-       <div class="quiz-container"> 
-      <div class="timer"> time left: <span id="time">30</span>s</div>
-      
-      <div class="questionE1"> What does cyber threat intelligence begin with?</div> 
-      <div class="optionsE1"> 1:Planning and direction
-        2:Analysis
-        3:Feedback
-        4:Dissemination</div>
+ <a href="loginsignuporcontactUs.html"> Login or sign up</a>   </header>
 
-<div class="questionE2"> What one of these are not included in the CTI cycle? </div> 
-      <div class="optionsE2">1: Planning and direction
-        2:Analysis
-        3:Feedback
-        4:accuracy</div>
-
-<div class="questionE3"> What is the three main ways to deliver CTI? </div> 
-      <div class="optionsE3">1: Planning and direction and analysis.
-        2:Strategic threat intelligence, tactical threat intelligence and Operational threat intelligence.
-        3:information overload, frequent updates and data relevance.
-        4:internal sources, third-party information providers and social media intelligence.
-                </div> 
-        <div class="questionE4"> What one of these are not included in the challenges presented? </div> 
-      <div class="optionsE4">1:information overload 
-        2:frequent updates
-        3:data relevance
-        4:Planning and direction </div>
-
-
-     
-      <div class="result"> your score: <span id="score">0</span> </div> 
-      <button class= "restart-btn"> Restart quiz </button> 
-  </div>     
-      </body> 
-      <script src="./script.js"></script>
-<button id="scrollToTopBtn"> Back to Top</button>
- 
- </div>
-
+<body> 
+<div class="app"> 
+    <h1> Quiz</h1>
+<div class="quiz"> 
+    <h2 id="question"> Question goes here </h2>
+      <div id ="answer-buttons">
+        <button class="btn">Answer 1</button>
+       <button class="btn">Answer 2</button> 
+       <button class="btn"> Answer 3</button> 
+        <button class="btn">Answer 4</button>
+    </div>
+      <button id="next-btn">Next</button>
+    </div> 
+     </div>      
+    <script src="quiz.js"></script>  
+</body> 
 </html>
 

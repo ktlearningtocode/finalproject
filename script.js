@@ -1,47 +1,35 @@
 
-const scrollToTopBtn =document.getElementById("scrollToTopBtn");
 
-window.onscroll= function() {
-     
-if (document.body.scrollTop > 100  ||
-document.documentElement.myBtn.classList.add('show')) { 
+
+
+let scrollToTopBtn =document.getElementById("scrollToTopBtn");
+
+window.onscroll= function() {scrollFunction()} 
+   
+    function scrollFunction() { 
+if (document.body.scrollTop > 20  ||
+document.documentElement.scrollTop > 20) { 
     mybutton.style.display= "block";
 } else { 
-scrollToTopBtn.classList.remove('show'); 
-}
-};
-scrollToTopBtn.addEventListener("click",function() {
-    window.scrollTo({
-        top:0,
-        behaviour:"smooth"
-    });
+ mybutton.style.display="none"; 
+}}
 
-    });
-    
 
 function topFunction() {
 document.body.scrollTop=0;
 document.documentElement.scrollTop=0; }
 
 
- function openNav() { 
-document.getElementById("mySidenav").style.width="100%"; 
+ 
+const signInForm = document.getElementById ('signupcontainer'); 
+const registerBtn = document.getElementById  ('register_btn');
+const loginBtn = document.getElementById  ('login_btn');
 
-} 
-function closeNav() {
-    document.getElementById("mySidenav").style.width="0";
-
-}
-
-const container = document.querySelector ('.signupcontainer'); 
-const registerBtn = document.querySelector ('.register-btn');
-const loginBtn = document.querySelector ('.login-btn');
-
-registerBtn.addEventListener('click', ()=> {
-container.classList.add('active');
+registerBtn.addEventListener('click', function(){
+signInForm.style.display='block';
 
 })
-loginBtn.addEventListener('click', ()=> {
-container.classList.add('active');
+loginBtn.addEventListener('click', function() {
+signInForm.style.display='block';
 })
 

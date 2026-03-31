@@ -5,55 +5,65 @@ box-sizing: border-box;
 }
 body
 {
-    background: linear-gradient(70deg, #ffffff, #f8f6f69d);;
-}  
-.sidebar { 
-max-width: 600px;
-height:100%; 
+  background:rgb(0, 0, 0);
+    display: flex;
+  flex-direction: row;
+  justify-content:center;
+     align-items: start;
+      margin: 160px;
+      z-index: 1;
+
+  }  
+.sidenav { 
 width: 100px;
-position:absolute;
-z-index: auto;
-background: linear-gradient(70deg, #adaaaa, #e5dede );
-overflow: hidden;
-padding-top: 5px;
+height:100%; 
+position:fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background: #adaaaa00;
+overflow-x: hidden;
+padding-top: 20px;
 transition: 0.5s;
 border-radius: 5%; 
-box-shadow: 10 4px 10px rgb(0, 0, 0);
+box-shadow: 10 4px 10px #079ade9d;
+color: #e5dede;
 } 
 
-.sidebar a { 
+.sidenav a { 
   padding: 20px;
    text-decoration: none;
-   color: rgb(13, 13, 13);
+   color: rgb(255, 255, 255);
    display:list-item;
-   box-shadow: 10 4px 10px rgb(0, 0, 0);
+  box-shadow: 10 4px 10px #079ade9d;
 }
-.sidebar a:hover:not(.active) {
-   background-color: rgb(55, 1, 1);
+.sidenav a:hover:not(.active) {
+   background-color: rgb(6, 109, 165);
    color:rgb(255, 255, 255)
 
 }
 
-.sidebar a:hover { 
-    background-color: rgb(55, 1, 1);;
+.sidenav a:hover { 
+     background-color: rgb(6, 109, 165);
    color: rgb(255, 255, 255);
 }
 
 .app{ 
-   background: #6f6d6d;
+   background: #00000007;
    max-width: 600px;
    margin: 100px auto 0;  
    padding: 30px;
    text-align: center;
    box-sizing: border-box;
    border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 10 4px 10px rgb(72, 156, 202);
 }
 .app h1 {
 font-size: 30px;
 margin:-20px 20;
 font-weight: 600;
-border-bottom: 1px soild #000000;
+color: rgb(255, 255, 255);
+border-bottom: 1px soild #ffffff;
 padding-bottom: 30px;
 }
 
@@ -63,7 +73,7 @@ padding: 20px 0;
 }
 .quiz h2 { 
 font-size: 20px;
-color: #000000;
+color: #ffffff;
 font-weight: 600;
 }
 
@@ -72,7 +82,7 @@ font-weight: 600;
     color: #000000;
     font-weight: 500;
     width: 100%;
-    border: 1px soild #000000;
+box-shadow: 10 4px 10px rgb(72, 156, 202);
     padding: 10px;
     margin: 10px 0;
     text-align: center;
@@ -82,17 +92,16 @@ font-weight: 600;
     
     }
      .btn:hover:not([disabled]){
-        background: #3e3e3e;
-        color: rgb(55,1,1);
+        background: #000000;
+        color: rgb(255, 255, 255);
         }
         .btn:disabled{ 
 cursor: no-drop;
         }
 
-
         #next-btn{ 
-            background: #000000;
-            color: #ffffff ;
+            background: #ffffff;
+            color: #1b90b0 ;
             font-weight: 500;
             width: 150px;
             border: 0;
@@ -101,6 +110,7 @@ cursor: no-drop;
              border-radius: 5px;
              cursor: pointer;
             display:none; 
+            box-shadow: 10 4px 10px rgb(72, 156, 202);
                     }
 
   .correct { 
@@ -111,3 +121,61 @@ background: green;
 background: red;
 
   }
+.box ul li{
+position: absolute;
+width: 50px;
+height: 50px;
+list-style: none;
+opacity: 10;
+background: radial-gradient(rgb(12, 144, 237), transparent, transparent); 
+animation: animate 6.5s linear infinite;
+right: 30px;
+}
+.box ul li:nth-child(2){
+   left: 25vw;
+    animation-delay:1s;
+} 
+.box ul li:nth-child(3){
+   left: 32vw;
+    animation-delay:2s; } 
+   .animation ul li:nth-child(4){
+   left: 27vw;
+    animation-delay:1s;
+   }
+      .animation ul li:nth-child(5){
+   left: 30vw;
+    animation-delay:1ms;
+} 
+  .animation ul li:nth-child(6){
+   left: 31vw;
+    animation-delay:1s;
+} 
+ .animation ul li:nth-child(7){
+   left: 26vw;
+    animation-delay:1s;
+} .box ul li:nth-child(8){
+   left: 26vw;
+    animation-delay:1ms;
+} 
+.box ul li:nth-child(9){
+   left: 29vw;
+    animation-delay: 2ms;;
+} 
+@keyframes animate { 
+   0% { 
+      transform: scale(0);
+      opacity: 1;
+      bottom: 0;
+       }
+100% { 
+   transform: scale(15);
+   opacity: 0 ;
+   bottom: 100vh;
+}
+
+
+}
+
+
+  
+  

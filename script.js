@@ -33,3 +33,12 @@ loginBtn.addEventListener('click', function() {
 signInForm.style.display='block';
 })
 
+const slider = document.querySelector('.slider'); 
+const leftArrow = document.querySelector('.arrowleft'); 
+const rightArrow = document.querySelector('.arrowright');
+
+rightArrow.addEventListener('click', function() { 
+slider.style.transform="translate(-25px)" ;
+
+
+});

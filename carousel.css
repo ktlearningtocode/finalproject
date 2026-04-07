@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios"); 
 
 body{
-    background:rgb(0, 0, 0);
+background:rgb(0, 0, 0);
 } 
 #scrollToTopBtn{
 position: fixed;
@@ -43,20 +43,20 @@ right: 30px;
    .animation ul li:nth-child(4){
    left: 27vw;
     animation-delay:1s;
-   }
-      .animation ul li:nth-child(5){
+}
+.animation ul li:nth-child(5){
    left: 30vw;
     animation-delay:1ms;
 } 
-  
-   .animation ul li:nth-child(6){
+.animation ul li:nth-child(6){
    left: 31vw;
     animation-delay:1s;
 } 
- .animation ul li:nth-child(7){
+.animation ul li:nth-child(7){
    left: 26vw;
     animation-delay:1s;
-} .box ul li:nth-child(8){
+}
+.box ul li:nth-child(8){
    left: 26vw;
     animation-delay:1ms;
 } 
@@ -74,109 +74,122 @@ right: 30px;
    transform: scale(10);
    opacity: 1;
    bottom: 100vh;
-}
-
-
-}
-.sidenav { 
-width: 100px;
-height:100%; 
-position:fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background: #020202;
-overflow-x: hidden;
-padding-top: 20px;
-transition: 0.5s;
+}}
+.topnav {
+background:  #000000;
+overflow: hidden;
 border-radius: 5%; 
-box-shadow: 10 4px 10px #079ade9d;
-color: #e5dede;
-} 
-
-.sidenav a { 
-  padding: 6px 8px 6px 16px;
-   text-decoration: none;
-   font-size: 25px;
-   color: rgb(255, 255, 255);
-   display:block;
-   box-shadow: 40 4px 10px rgb(31, 104, 149);
+box-shadow: 10 4px 10px rgb(36, 158, 182);
 }
-.sidenav a:hover:not(.active) {
-   background-color: rgb(23, 162, 204);
-   color:rgb(255, 255, 255)
-
+.topnav a{
+ color: #fcf9f9;
+ text-align: right;
+ float: right;
+padding: 5px 5px;
+text-decoration: none;
+font-size: 16px;
+text-decoration: none;
+ 
 }
 
-.sidenav a:hover { 
-    background-color: rgb(40, 118, 166);;
-   color: rgb(255, 255, 255);
-}
-.container{
-   width: 80%;
-   margin: 10px auto;
-   
-}
+.topnav a:hover {
+   background-color:rgb(43, 166, 224);
+   color: #000000;
+   }
+
+   .topnav a:active {
+   background-color: rgb(43, 166, 224);
+   color: rgb(0, 0, 0); } 
+
 .carousel { 
-   border: 2px solid #0b82b1;
-  height: 400px;
-   position: relative;
-       }
-.slider { 
-   height: 100%;
- display: flex;
-   width: 400%;
- border: 4px soild #15a4a6;
- transition: all 0.5s;
-  
+position: relative;
+color: #e5dede;
 }
- .slider section { 
-flex-basis: 100%;
-display: flex;
+.carousel__section{
+height: 300px;
+background-color: #02020200;
+color: #e5dede;
+padding: 50px;
+display: none;
 justify-content: center;
-align-items: center;
-color: white;
+text-align: center;
+}
+.carousel__section--selected{ 
+display: block;
+
+}
+.carousel__section h1{ 
+color: #e5dede;
+font-weight: bold;
+font-size: 45px;
+}
+
+.carousel__section p { 
+color: #e5dede; 
 font-size: 20px;
-} 
-.controls .arrow {
-   font-size: 100px;
-   top: 50%;
-cursor: pointer;
+justify-content: left;
+align-content: center;
 
 }
-.left{
-    left: 10px; 
-     color: white;
-}
-.right{
-    right: 10px; 
-    color: white;
-}
-.controls ul { 
+.carousel__nav { 
+width: 100%;
+padding: 20px 0;
 position: absolute;
-bottom: 10px;
-transform: translate(250%); 
-list-style: none; 
-display: flex;
-padding: 0; 
-margin: 0;
-
+bottom: 0;
+left: 0;
+background:#0b82b1;
+text-align: center;
+color: #e5dede;
 }
-.controls ul li  {
-       width: 10px;
-   height: 10px;
-border: 5px solid #0b82b1;
-border-radius: 10px;
-margin: 10px;
-background-color: #e5dede;
+
+.carousel__button{ 
+width: 10px;
+height: 10px;
+display: inline-block;
+background: #555;
+border-radius: 50%;
+margin: 0 5px;
 cursor: pointer;
 }
 
-.controls ul li.selected{ 
-   background: transparent;
-   
+.carousel__button--selected{
+background: #e5dede;
 }
 
+img{ 
+width: 100%;
+max-width: 400px;
+object-fit: cover;
+vertical-align: buttom;
+}
+@media screen and (min-width:400px) {
+.carousel {
+      width:auto;
+height:fit-content;
+position: relative; 
+    }
+.carousel__section{
+       width:auto;
+height:fit-content;
+position: relative;
+    }
+    .carousel__section h1{ 
+color: #e5dede;
+font-weight: bold;
+font-size: 45px;} 
+.sidenav{ 
+  padding-top: 15px;
+position: absolute;
+  } 
+.sidenav a { 
+font-size: 16px;
+
+  }
+.scrollToTopBtn { 
+bottom: 0; 
+position: absolute;
+}
+}
 
 
  

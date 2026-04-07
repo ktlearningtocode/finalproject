@@ -1,3 +1,4 @@
+-- Active: 1774796126526@@127.0.0.1@3306@users
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,58 +11,62 @@
 <script src="script.js"></script>
 </head>
  <header> 
-    <div class="sidenav">
-  <a href="#default" id="logo">CompanyLogo</a>
- <a href="index.html">Homepage</a> 
+    <div class="topnav">
+   <a class="active" href= "index.html">Back to Homepage</a> 
    <a href="quiz_page.html">Have a go at our quiz</a>
-    <a href="loginsignup.html">Login or sign up </a></a>
+   <a href="loginsignup.html"> login or sign up</a>
+  </div>
 </div>  </header>
  <body>      <main>
 <div class="box">
 <ul>
-   <li>Threat</li>
+<li>Threat</li>
 <li>inteligence</li>
 <li>Cyber</li> 
 <li></li> 
- <li> </li>
-<li> </li>
-<li> </li> 
- <li></li>
-<li> </li>
+<li></li>
+<li></li>
+<li></li> 
+<li></li>
+<li></li>
 </ul>
 </div>
+<div class="carousel">
+<div class="carousel__section"><h1> What is Cyber Threat Intelligence?</h1></div>
+<div class="carousel__section"><p> Threat intelligence refers to the collection, processing,<br>
+  and analysis of data to understand a threat actors motives, <br> 
+  targets, and attack methods.</p></div>
+<div class="carousel__section"> <p> It transforms raw data into actionable insights, enabling security teams to make informed, <br> 
+  data-driven decisions. This shifts organizations from a reactive to a proactive stance in defending against cyber threats.</p></div>
 
-    <div class="container"> 
-  <div class="carousel">
-  <div class="slider" > 
-<section> Content for section 1</section>
-<section> Content for section 2</section>
-<section> Content for section 3</section>
-<section> Content for section 4</section>
-  </div>
-
-<div class="controls"> 
-<span class="arrow left">
-  <i class="material-icons">keyboard_arrow_left</i></span> 
-<span class="arrow right">
-  <i class="material-icons">keyboard_arrow_right</i></span> 
-
-<ul> 
-<li class="selected"></li>
-<li> </li>
-<li> </li>
-<li> </li>
-</ul>
-
-  <script src="script.js"></script>  
-
+  <div class="carousel__section"> <img src="cticycle.png" alt=""> </div>
+<div class="carousel__section"><P>The intelligence cycle- <br> 
+<li>Planning and direction</li>  
+<li>Collection </li>
+<li>Processing and exploitation</li>
+<li>Analysis</li>
+<li>Dissemination </li>
+<li>Feedback</li></P>
 </div>
-   </div>
- </div>
 
-
-<button onclick="topFunction()" id="scrollToTopBtn" title="go to top"> Back to Top</button>
+<div class="carousel__section"><p>Cyber intelligence begins with planning and direction, <br>
+  which enables effective preparation for any potential threat. The next step in the cycle includes Collection, <br> 
+  which involves gathering relevant intelligence. Then, Processing and exploitation, which might be considered a key component of a threat intelligence platform, <br>
+  as it is a potent tool for analysts.</p></div>
+<div class="carousel__section"><p>Next is the analysis, which brings all the collected and processed information together and analyses it for new or key information that can provide context on the facing threats.</p> </div>
+<div class="carousel__section"> <p>This then looks for patterns in data. After that, it is Dissemination, <br>
+ which is the phase where the analyst takes all the information they have identified and applies the relevant context for their customer into a finished intelligence report.
+ The finished report can come in many forms.<br> 
+ The last stage of the cycle is feedback, which involves gathering feedback from customers. </p>
 </div> 
+
+
+</div>
+
+
+<script src="carousel.js"></script>  
+<button onclick="topFunction()" id="scrollToTopBtn" title="go to top"> Back to Top</button>
+
 </main>
 
  </body>

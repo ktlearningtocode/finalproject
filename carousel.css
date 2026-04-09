@@ -19,9 +19,15 @@ box-shadow:  2px 6px 20px rgb(40, 148, 226);
 font-size:16px; 
 transition:opacity 0.3s ease,transform 0.3s ease; 
 }
+#scrollToTopBtn a{ 
+background-color:rgba(129, 131, 132, 0);
+color: rgb(252, 251, 251);
+cursor: pointer; 
 
-#scrollToTopBtn:hover {
-background-color: #555;
+}
+#scrollToTopBtn a:hover {
+background-color: #000000;
+color: #0b82b1;
 }
 .box ul li{
 position: absolute;

@@ -27,9 +27,18 @@ font-size:16px;
 transition:opacity 0.3s ease,transform 0.3s ease; 
 }
 
-#scrollToTopBtn:hover {
-background-color: #555;
+
+#scrollToTopBtn a{ 
+background-color:rgba(129, 131, 132, 0);
+color: rgb(252, 251, 251);
+cursor: pointer; 
 }
+
+#scrollToTopBtn a:hover {
+background-color: #0b0b0b;
+color: #0b82b1;
+}
+
 .container{ 
  margin:0 auto;
  background: #cee7ef12;

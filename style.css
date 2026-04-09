@@ -175,10 +175,15 @@ right: 30px;
 }
 
 @media screen and (min-width:400px) {
-.app{
-position:relative;
+.body{ 
+position:absolute; }
+  .container{ position: relative;
 }
-.homepage{ 
-  position:relative;
+
+.app{
+position:inherit;
+}
+.quiz { 
+  position:inherit;
 }
  }

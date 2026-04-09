@@ -10,7 +10,26 @@ width: 100%;
 min-height: 100vh;
 color: #ffffff;
 }
+#scrollToTopBtn{
+position: fixed;
+bottom: 30px; 
+right: 30px;
+z-index: 99;
+outline: none;
+border:none;
+background-color:rgba(0, 0, 0, 0.658);
+color: #ffffff;
+cursor: pointer; 
+padding:10px;
+border-radius: 10px; 
+box-shadow:  2px 6px 20px rgb(16, 79, 124);
+font-size:16px; 
+transition:opacity 0.3s ease,transform 0.3s ease; 
+}
 
+#scrollToTopBtn:hover {
+background-color: #555;
+}
 .container{ 
  margin:0 auto;
  background: #cee7ef12;
@@ -20,7 +39,7 @@ color: #ffffff;
  text-align: center;
 width: 100%;
  border-radius: 5px;
-box-shadow: 2px 6px 20px rgb(15, 78, 250);
+box-shadow: 20px 6px 20px rgb(0, 0, 0);
 justify-content:center;
 text-align: center;
 overflow-x: visible;
@@ -33,8 +52,9 @@ justify-content: flex-start;
 gap: 10px;
 padding:30px 0;
 margin-bottom: 30px;
+color: #ffffff;
 background-color: rgb(0, 0, 0);
-
+box-shadow: 10px 4px 10px rgba(16, 66, 120, 0.697);
  }
 
 .feed-item { 
@@ -42,6 +62,8 @@ margin-top: 100px;
 padding: 15px;
 text-align: left;
 background-color: rgb(0, 0, 0);
+box-shadow: 2px 6px 2px rgba(11, 62, 120, 0.655);
+
 }
 .feed-item h2 { 
 font-size: 25px;
@@ -51,6 +73,7 @@ color: #fcf9f9;
 }
 .feed-item { 
 padding: 20px 15px 10px;
+box-shadow: 6px 6px 6px rgba(17, 63, 142, 0.556);
 } 
 
 .feed-item p {
@@ -77,9 +100,10 @@ color: #1962b0;
 background:  #000000;
 overflow: hidden;
 border-radius: 5%; 
-box-shadow: 10 4px 10px rgb(36, 158, 182);
+box-shadow: 2px 6px 2px rgb(28, 74, 126);
    display: block;
    justify-content: right;
+   display: fixed;
 }
 .topnav a{
  color: #fcf9f9;
@@ -89,6 +113,7 @@ padding: 5px 5px;
 text-decoration: none;
 font-size: 16px;
 text-decoration: none;
+box-shadow: 2px 6px 2px rgb(28, 74, 126);
  
 }
 
@@ -106,29 +131,37 @@ color: rgb(0, 0, 0); }
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
-gap: 10px;
-padding:30px 0;
+gap: 50px;
+padding:15px 0;
 margin-bottom: 30px;
 background-color: rgb(0, 0, 0);
+border-radius: 5%;
 
  }
 .filters{ 
 padding: 10px;
 margin-top:5px;
+border-radius: 5%;
 background-color: rgb(0, 0, 0);
+box-shadow: 20px 6px 20px rgb(28, 74, 126);
+
 }
 
 .filters h2{ 
 font-size: 45px;
-margin: 10px;
+margin: 5px;
 text-align: center;
 color: #fcf9f9;
+box-shadow: 20px 6px 20px rgb(28, 74, 126);
+border-radius: 5%;
 }
 .filterdata{
 margin-top: 10px;
-padding: 15px;
+padding: 20px;
 text-align: left;
 background-color: rgb(0, 0, 0); 
+border-radius: 5%;
+box-shadow: 10px 10px 10px rgb(28, 74, 126);
 }
 
 .filterdata h2 { 
@@ -136,6 +169,8 @@ font-size: 20px;
 margin: 5px;
 text-align: center;
 color: #fcf9f9;
+border-radius: 15%;
+box-shadow: 20px 6px 20px rgb(28, 74, 126);
 }
 
 .filterdata .text p { 
@@ -151,11 +186,11 @@ transition: color 0.3s;
 font: inherit;
 cursor: pointer;
 display: inline-block;
-border: #1962b0;
 border-radius: 5px;
-color: #000000;
+color: #ffffff;
 padding:0 8px;
-
+box-shadow: 20px 6px 20px rgb(28, 74, 126);
+background-color: #000000;
 } 
 .filterbutton:hover{ 
    color: #ffffff; 

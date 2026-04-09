@@ -177,14 +177,13 @@ position: relative;
 color: #e5dede;
 font-weight: bold;
 font-size: 45px;} 
-.sidenav{ 
+.topnav{ 
   padding-top: 15px;
 position: absolute;
   } 
-.sidenav a { 
+.topnav a { 
 font-size: 16px;
-
-  }
+}
 .scrollToTopBtn { 
 bottom: 0; 
 position: absolute;

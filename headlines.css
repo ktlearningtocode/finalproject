@@ -42,7 +42,7 @@ width: 100%;
 box-shadow: 20px 6px 20px rgb(0, 0, 0);
 justify-content:center;
 text-align: center;
-overflow-x: visible;
+overflow-x: hidden;
 overflow-y: scroll;
 }
 .feed-container { 
@@ -95,7 +95,6 @@ color: #177c92;
 color: #1962b0;
 
 }
-
 .topnav {
 background:  #000000;
 overflow: hidden;

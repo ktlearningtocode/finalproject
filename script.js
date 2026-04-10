@@ -4,7 +4,6 @@ function topFunction() {
 document.body.scrollTop=0;
 document.documentElement.scrollTop=0; }
 
-
 var x = document.getElementById('register_btn');
 var x = document.getElementById('login_btn');
 

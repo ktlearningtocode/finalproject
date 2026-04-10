@@ -203,7 +203,7 @@ font-size: 45px;}
 
 .carousel__nav { 
 position: relative;
-bottom: 80%;
+bottom: 10px;
 }
 
 }

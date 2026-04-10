@@ -201,6 +201,10 @@ color: #e5dede;
 font-weight: bold;
 font-size: 45px;} 
 
+.carousel__nav { 
+position: relative;
+
+}
 
 }
 

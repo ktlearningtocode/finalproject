@@ -312,15 +312,6 @@ animation: backgroundAnim 5s ease-in-out infinite reverse ;
     
    }
 
-
-
-
-
-
-
-
-
-
 @keyframes backgroundAnim {
    0% {     
       opacity: 0;

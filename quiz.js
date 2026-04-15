@@ -1,6 +1,6 @@
 const questions =[{
 
-question: "What does cyber threat intelligence begin with?", 
+question: "What does the cyber threat intelligence cycle begin with?", 
 answers: [
     {text: "Planning and direction", correct: true},
    {text: "Analysis", correct:false }, 
@@ -15,7 +15,7 @@ answers: [
 {text: "Planning and direction", correct:false},
 {text: "Analysis", correct:false}, 
 {text: "Feedback", correct:false},
-{text: "accuracy", correct:true},
+{text: "Accuracy", correct:true},
 ] 
 },
  

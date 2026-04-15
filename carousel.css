@@ -107,14 +107,17 @@ margin: 20px;
 float: left;
 padding:2px;
 color: #ffffff;
+transition: transform 0.2s;
 }
 .homepage a { 
 color: #ffffff;
 text-decoration: none;
 }
-.homepage a:hover {
+.homepage:hover {
    background-color:rgb(43, 166, 224);
-   color: #000000; }
+   color: #000000;
+   transform: scale(1.5);
+ }
 .homepage:hover a:active {
    background-color: rgb(8, 6, 6);
    color: white; 
@@ -140,12 +143,16 @@ display: none;
 display: block;
 
 }
-.carousel__section h1{ 
-color: #e5dede;
-font-weight: bold;
-margin: 10px;
-font-size: 40px;
+h1 {
+font-size: 45px;
+margin:0;
+color: #00000004;
+position: relative;
+-webkit-text-stroke: 0.3vw #2699fe47;
+text-transform: capitalize;
+
 }
+
 
 .carousel__section p { 
 color: #e5dede; 

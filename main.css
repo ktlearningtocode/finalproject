@@ -103,9 +103,32 @@ body{
 .container h1 {
 font-size: 45px;
 margin:0;
-color: #ffffff;
+color: #00000004;
+position: relative;
+-webkit-text-stroke: 0.3vw #2699fe47;
+text-transform: capitalize;
 
 }
+.container h1::before{ 
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+color: #2ad8d8;
+-webkit-text-stroke: 0vw #00e8f855;
+border-right: 2px solid #000000;
+overflow: hidden;
+animation: animate 8s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+   0%, 10%, 100% { width: 0; }
+   70%, 90% { width: 100%;}
+   
+}
+
 .container p{
    font-size: 40px;
    margin: 10px 0px;

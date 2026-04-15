@@ -97,7 +97,7 @@ animation: backgroundAnim 5s ease-in-out infinite reverse ;
     
    }
 
-.homepage{
+#homepage{
 background:#000000;
 overflow: hidden;
 border-radius: 10%; 
@@ -109,16 +109,16 @@ padding:2px;
 color: #ffffff;
 transition: transform 0.2s;
 }
-.homepage a { 
+#homepage a { 
 color: #ffffff;
 text-decoration: none;
 }
-.homepage:hover {
+#homepage:hover {
    background-color:rgb(43, 166, 224);
    color: #000000;
    transform: scale(1.5);
  }
-.homepage:hover a:active {
+#homepage:hover a:active {
    background-color: rgb(8, 6, 6);
    color: white; 
     box-shadow: 10 4px 10px rgb(7, 101, 120);

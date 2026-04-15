@@ -18,31 +18,33 @@ body
   }
 
 
-.homepage{
-background:#000000;
-overflow: hidden;
-border-radius: 10%; 
- box-shadow: 10px 4px 10px #00FFFF; 
-font-size: 50px;
-margin: 20px;
-float: left;
-padding:2px;
-color: #ffffff;
-transition: transform 0.2s;
+.homepagebtn{
+ background: #fbf9f9;
+  color: #000000;
+  font-weight: 500;
+  width: 100%;
+ box-shadow: 10px 4px 10px #00FFFF;  
+  padding: 5px;
+  margin: 5px; 
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s; 
+    font-size: 30px;  
 }
-.homepage a { 
-color: #ffffff;
+.homepagebtn a { 
+color: #14ccb4;
 text-decoration: none;
 }
-.homepage:hover {
- box-shadow: 10px 4px 10px #00FFFF; 
+.homepagebtn:hover {
+   background-color:rgb(43, 166, 224);
    color: #000000;
    transform: scale(1.5);
  }
-.homepage:hover a:active {
+.homepagebtn:hover a:active {
    background-color: rgb(8, 6, 6);
    color: white; 
-     box-shadow: 10px 4px 10px #00FFFF; 
+    box-shadow: 10 4px 10px rgb(7, 101, 120);
 } 
 
 .app{ 

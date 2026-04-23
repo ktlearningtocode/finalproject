@@ -58,7 +58,7 @@ overflow-y: scroll;
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
-gap: 10px;
+gap: 50px;
 padding:30px 0;
 margin-bottom: 30px;
 color: #ffffff;
@@ -75,13 +75,14 @@ box-shadow: 2px 6px 2px rgba(11, 62, 120, 0.655);
 
 }
 .feed-item h2 { 
-font-size: 25px;
+font-size: 45px;
 margin: 50px;
 text-align: center;
 color: #fcf9f9;
 }
 .feed-item { 
-padding: 20px 15px 10px;
+padding: 40px 100px 100px;
+background-color: #56535361;
 box-shadow: 6px 6px 6px rgba(17, 63, 142, 0.556);
 } 
 
@@ -97,6 +98,7 @@ color: #fcf9f9;
 .feed-item a:hover{ 
 text-decoration: underline;
 color: #177c92;
+font-size: 55px;
 }
 
 .feed.link {
@@ -137,15 +139,15 @@ box-shadow: 10 4px 10px rgb(36, 158, 182);
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
-gap: 50px;
+gap: 100px;
 padding:15px 0;
 margin-bottom: 30px;
-background-color: rgb(0, 0, 0);
+background-color: rgb(90, 88, 88);
 border-radius: 5%;
 
  }
 .filters{ 
-padding: 10px;
+padding: 5px;
 margin-top:5px;
 border-radius: 5%;
 background-color: rgb(0, 0, 0);
@@ -158,16 +160,14 @@ font-size: 45px;
 margin: 5px;
 text-align: center;
 color: #fcf9f9;
-box-shadow: 20px 6px 20px rgb(28, 74, 126);
-border-radius: 5%;
 }
 .filterdata{
+   font-size: 35px;
 margin-top: 10px;
 padding: 20px;
 text-align: left;
 background-color: rgb(0, 0, 0); 
-border-radius: 5%;
-box-shadow: 10px 10px 10px rgb(28, 74, 126);
+
 }
 
 .filterdata h2 { 
@@ -175,8 +175,8 @@ font-size: 20px;
 margin: 5px;
 text-align: center;
 color: #fcf9f9;
-border-radius: 15%;
-box-shadow: 20px 6px 20px rgb(28, 74, 126);
+font-size: 35px;
+
 }
 
 .filterdata .text p { 
@@ -203,7 +203,7 @@ background-color: #000000;
    background-color: #1962b0;
 }
 .filterbutton.is-active{ 
-background-color:slategrey ;
+background-color:rgb(74, 120, 166) ;
 color: #ffffff;
 }
 
@@ -214,6 +214,7 @@ flex-wrap: wrap;
 
 .post{ 
 position:relative;
+background-color: #656667;
 width: 300px;
 margin-right: 30px;
 margin-bottom: 40px;
@@ -262,68 +263,20 @@ padding: 15px;
       filter: blur(2px);
       animation: backgroundAnim 2s ease-in-out infinite alternate-reverse ;
      }
-.backgroundAnim2 { 
-position: absolute;
-top: 0;
-left: 0;
-width: 50%;
-height: 5px;
- border-radius: 10%;
-background: #0b1f7b80;
-filter: blur(1px);
-animation: backgroundAnim 5s ease-in-out infinite reverse ;
-}
-.backgroundAnim3 { 
-     position: absolute;
-      top: 0;
-      right: 0;
-      width: 10px;
-      height: 1px; 
-      border-radius: 10%;
-     background: #1111a469;
-      filter: blur(1px);
-      animation: backgroundAnim 15s ease-in-out infinite alternate;
 
-   }
-
-
-    .backgroundAnim4{ 
-      position: absolute;
-      bottom: 1px;
-      right: 50%;
-      width: 50%;
-      height: 1px; 
-       border-radius: 100%;
-     background: #00e8f855;
-      filter:blur(1px);
-      animation: backgroundAnim 8s ease-in-out infinite alternate;
-   }
-
-     .backgroundAnim5{ 
-      position: absolute;
-      bottom: 5px;
-      right: 5%;
-      width: 10%;
-      height: 5px; 
-       border-radius: 50%;
-     background: #07c78772;
-      filter:blur(3px);
-      animation:backgroundAnim 5s ease-in-out infinite alternate;
-    
-   }
 
 @keyframes backgroundAnim {
    0% {     
       opacity: 0;
       transform: scale(1);
       buttom: 15px;
-      width: 10%;
+      width: 100%;
    }
    100% { 
        opacity: 1;
-      transform: scale(1);
-    top: 580px;
-     width:50%; 
+      transform: scale(50);
+    top: 10px;
+     width:5%; 
 
    } }
 

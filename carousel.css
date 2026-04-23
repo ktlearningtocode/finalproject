@@ -1,101 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios"); 
-* { margin: 0; 
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+*{ 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ font-family: 'Times New Roman', Times, serif;
 }
 body{
-background:rgb(0, 0, 0);
-} 
+background-color: rgb(0, 0, 0);
+width: 100%;
+min-height: 100vh;
+color: #ffffff;
+}
 
 .container{
-  margin-top:100px;
-  height:auto;
-  background: #000000f7;
-  padding: 5px;;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 2px 6px 20px rgb(27, 59, 147);
-  text-align: center;
-  position: relative;
+ margin:0 auto;
+ background: #6566671a;
+ padding:0px;
+width: 100%;
   }
-  .backgroundAnim1{ 
+
+ .info-container { 
+  margin:10px;
+ background: #00000000;
+ height: 100%;
+ padding:10px;
+ width: 100%;
+ border-radius: 5px;
+box-shadow: 20px 6px 20px rgb(0, 0, 0);
+overflow-x: hidden;
+overflow-y: scroll;
+color: white;
+
+  }
+
+.info-container p { 
+ margin: 10px 10px 10px;
+font-size: 35px;
+margin:20px;
+text-align: left; 
+}
+.info-container h2 { 
+font-size: 45px;
+margin: 50px;
+color: #ffffff;
+position: relative;
+text-align: center; 
+}
+
+.info-container ul li { 
+justify-content: center;
+text-align: center;
+font-size: 45px;
+
+  }
+
+    .backgroundAnim1{ 
       position: absolute;
       top: 75%;
       left: 0;
       width: 50%;
-      height: 2px; 
+      height: 20px; 
        border-radius: 100%;
-      background: #027179b6;
+      background: #036c7311;
       filter: blur(2px);
-      animation: backgroundAnim 7s ease-in-out infinite alternate-reverse ;
+      animation: backgroundAnim 2s ease-in-out infinite alternate-reverse ;
      }
-
-.backgroundAnim2 { 
-position: absolute;
-top: 0;
-left: 0;
-width: 50%;
-height: 5px;
- border-radius: 10%;
-background: #0b1f7b80;
-filter: blur(1px);
-animation: backgroundAnim 5s ease-in-out infinite reverse ;
-}
 
 @keyframes backgroundAnim {
    0% {     
       opacity: 0;
       transform: scale(1);
       buttom: 15px;
-      width: 10%;
+      width: 100%;
    }
    100% { 
        opacity: 1;
-      transform: scale(10);
-    top: 580px;
-     width:50%; 
+      transform: scale(50);
+    top: 10px;
+     width:5%; 
 
-   }
-   
-}
-.backgroundAnim3 { 
-     position: absolute;
-      top: 0;
-      right: 0;
-      width: 10px;
-      height: 1px; 
-      border-radius: 10%;
-     background: #1111a469;
-      filter: blur(1px);
-      animation: backgroundAnim 15s ease-in-out infinite alternate;
+   } }
 
-   }
-
-
-    .backgroundAnim4{ 
-      position: absolute;
-      bottom: 1px;
-      right: 50%;
-      width: 50%;
-      height: 1px; 
-       border-radius: 100%;
-     background: #00e8f855;
-      filter:blur(1px);
-      animation: backgroundAnim 8s ease-in-out infinite alternate;
-   }
-
-     .backgroundAnim5{ 
-      position: absolute;
-      bottom: 5px;
-      right: 5%;
-      width: 10%;
-      height: 5px; 
-       border-radius: 50%;
-     background: #07c78772;
-      filter:blur(3px);
-      animation:backgroundAnim 5s ease-in-out infinite alternate;
-    
-   }
 
 .homepagebtn{
  background: #fbf9f9;
@@ -127,9 +112,8 @@ text-decoration: none;
 } 
 
 .carousel { 
- position: relative;
+position: relative;
 color: #e5dede;
-height: 100%;
 width: 100%;
 }
 .carousel__section{
@@ -145,24 +129,16 @@ display: none;
 display: block;
 
 }
-h1 {
+.carousel h1 {
 font-size: 45px;
 margin:0;
 color: #00000004;
 position: relative;
--webkit-text-stroke: 0.3vw #2699fe47;
-text-transform: capitalize;
-
+text-align: center; 
 }
 
-
-.carousel__section p { 
-color: #e5dede; 
-font-size: 30px;
-justify-content: left;
-}
 .carousel__nav { 
-height: 500px;
+height: 50px;
 width: 100%;
 padding-top: 1px;
 left: 10px;
@@ -172,7 +148,7 @@ color: #e5dede;
 }
 
 .carousel__button{ 
-width: 30px;
+width: 100px;
 height: 30px;
 display: inline-block;
 background: #555;
@@ -188,9 +164,11 @@ background: #e5dede;
 img{ 
 width: 100%;
 max-width: 400px;
-object-fit: cover;
-vertical-align: buttom;
+justify-content: center; 
+margin: 10px;
+
 }
+
 @media screen and (min-width:400px) {
 .container {
    position:relative; 

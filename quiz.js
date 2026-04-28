@@ -20,7 +20,7 @@ answers: [
 },
  
 {
-question:"what is the three main ways to deliver CTI?",
+question:"What is are three main types of CTI?",
 answers: [ 
 {text: "Planning and direction and analysis", correct:false}, 
 {text: "information overload, frequent updates and data relevance.", correct:false},
@@ -30,7 +30,7 @@ answers: [
 },
  
 {
-  question:"what one of these are not included in the challenges presented?",
+  question:"What one of these are not included in the challenges presented?",
 answers:[
   {text:"Planning and direction", correct:true}, 
 {text:"information overload", correct:false},
@@ -40,7 +40,7 @@ answers:[
 },
 
 {
-  question:"what is the ability to ensure that assets are viewable only by authorised people known as?",
+  question:"What is the ability to ensure that assets are viewable only by authorised people known as?",
 answers:[
 {text:"Planning and direction", correct:false}, 
 {text:"confidentiality", correct:true},

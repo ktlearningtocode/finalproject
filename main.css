@@ -14,20 +14,8 @@
        border-radius: 100%;
       background: #23767c7a;
       filter: blur(2px);
-      animation: backgroundAnim 7s ease-in-out infinite alternate-reverse ;
+      animation: backgroundAnim 7s ease-in-out infinite alternate-reverse;
      }
-
-.backgroundAnim2 { 
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 10px;
- border-radius: 10%;
-background: #ffffff47;
-filter: blur(3px);
-animation: backgroundAnim 5s ease-in-out infinite reverse ;
-}
 
 @keyframes backgroundAnim {
    0% {     
@@ -45,45 +33,6 @@ animation: backgroundAnim 5s ease-in-out infinite reverse ;
    }
    
 }
-.backgroundAnim3 { 
-     position: absolute;
-      top: 0;
-      right: 0;
-      width: 10px;
-      height: 10px; 
-      border-radius: 10%;
-     background: #1111a469;
-      filter: blur(1px);
-      animation: backgroundAnim 15s ease-in-out infinite alternate;
-
-   }
-
-
-    .backgroundAnim4{ 
-      position: absolute;
-      bottom: 50%;
-      right: 50%;
-      width: 50%;
-      height: 10px; 
-       border-radius: 100%;
-     background: #00e8f855;
-      filter:blur(3px);
-      animation: backgroundAnim 8s ease-in-out infinite alternate;
-   }
-
-     .backgroundAnim5{ 
-      position: absolute;
-      bottom: 50%;
-      right: 5%;
-      width: 10%;
-      height: 5px; 
-       border-radius: 50%;
-     background: #07c78772;
-      filter:blur(3px);
-      animation:backgroundAnim 5s ease-in-out infinite alternate;
-    
-   }
-
 
 body{
     background:rgb(0, 0, 0);

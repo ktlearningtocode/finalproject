@@ -12,16 +12,6 @@ function topFunction() {
 document.body.scrollTop=0;
 document.documentElement.scrollTop=0; }
 
-var x = document.getElementById('register_btn');
-var x = document.getElementById('login_btn');
-
-
-const registerButton =document.getElementById(`register_btn`);
-const loginButton = document.getElementById(`login_btn`);
-const signInForm = document.getElementById(`signin`); 
-const signUpForm= document.getElementById(`signup`);
-
-
 const feedContainer = document.getElementById('feedContainer');
 const rssFeeds = [
      "https://www.us-cert.gov/ncas/alerts.xml",
@@ -76,9 +66,9 @@ if (data.items) {
                             link.textContent = 'Read more';
                             link.target = '_blank';
 
-                            feedItem.appendChild(title);
+                           feedItem.appendChild(title);
                            feedItem.appendChild(link);
-                            feedContainer.appendChild(feedItem);
+                           feedContainer.appendChild(feedItem);
                         });
                     }
                 } catch (error) {
@@ -91,94 +81,3 @@ fetchFeeds();
 //loading the feeds on page load
 setInterval(fetchFeeds,600000);
 
-let postsData="";
-let filterData = "";
-const postContainer = document.querySelector(".post-container");
-const filterContainer = document.querySelector(".filter-container");
-
-
-
-fetch ("https://api.rss2json.com/v1/api.json?rss_url="
-).then(async (response) => { 
-postsData = await response.json(); 
-postsData.map((post) => createPost(post)); 
-filterData =[ 
-new set ( 
-postsData.map((post)=> post.categories)
-.reduce((acc, carVal)=> acc.concat(curVal),[])
-)
-];
-filterData.map((filter)=> createFilter(filter));
-});
-
-
-const createPost=(postData) => { 
-const {title, link, categories} =postData; 
-const post=document.createElement("div");
-post.className ="post"; 
-post.innerHTML = `
-<a class="post-preview" href="${link}" target="_blank"> 
-
-</a>
-<div class="post-content"> 
-    <p class="post-title">${title}</p>
-</div>
-<div class="post-tags"> 
-    ${categories 
-    .map((category)=> {
-return `<span class="post_tag">` + category + "</span>"; 
-})
-.join("")}
-</div>
-</div> 
-`;
-postContainer.append(post); 
-};
-
-const createFilter = (filter) => {
-  const filterButton = document.createElement("filter-button");
-  filterButton.className = "filter-button";
-  filterButton.innerText = filter;
-  filterButton.setAttribute('data-state', 'inactive');
-  filterButton.addEventListener("click", (e) =>
-    handleButtonClick(e, filter)
-  );
-  filterContainer.append(filterButton); 
-};
-const resetFilterButtons = (currentButton) => {
-  const filterButtons = document.querySelectorAll('.filter-button');
-  [...filterButtons].map(button => {
-    if (button != currentButton) {
-      button.classList.remove('is-active');
-      button.setAttribute('data-state', 'inactive')
-    }
-  })
-}
-
-const handleButtonClick = (e, param) => {
-  const button = e.target;
-  const buttonState = button.getAttribute('data-state');
-  resetFilterButtons(button);
-  
-  if (buttonState =='inactive') {
-    button.classList.add('is-active');
-    button.setAttribute('data-state', 'active');
-    handleFilterPosts(param)
-  } else {
-    button.classList.remove('is-active');
-    button.setAttribute('data-state', 'inactive')
-    resetPosts()
-  }
-}
-
-const handleFilterPosts = (param) => {
-  let filteredPosts = [...postsData].filter(post => post.categories.includes(param))
-  
-  postsContainer.innerHTML = "";
-  filteredPosts.map(post => createPost(post))
-};
-
-const resetPosts = () => {
-  postsContainer.innerHTML = "";
-  postsData.map((post) => createPost(post));
-} 

@@ -18,12 +18,17 @@ color: #ffffff;
  padding:0px;
 width: 100%;
   }
+  .container a { 
+font-size: 35px;
+ width: 100%;
+ color: #ffffff;
+  }
 
  .info-container { 
   margin:10px;
  background: #00000000;
  height: 100%;
- padding:10px;
+ padding:5px;
  width: 100%;
  border-radius: 5px;
 box-shadow: 20px 6px 20px rgb(0, 0, 0);
@@ -32,15 +37,13 @@ overflow-y: scroll;
 color: white;
 
   }
-
 .info-container p { 
  margin: 10px 10px 10px;
-font-size: 35px;
-margin:20px;
+font-size: 30px;
 text-align: left; 
 }
 .info-container h2 { 
-font-size: 45px;
+font-size: 40px;
 margin: 50px;
 color: #ffffff;
 position: relative;
@@ -50,39 +53,12 @@ text-align: center;
 .info-container ul li { 
 justify-content: center;
 text-align: center;
-font-size: 45px;
+font-size: 32px;
+box-shadow: #00FFFF;
 
   }
 
-    .backgroundAnim1{ 
-      position: absolute;
-      top: 75%;
-      left: 0;
-      width: 50%;
-      height: 20px; 
-       border-radius: 100%;
-      background: #036c7311;
-      filter: blur(2px);
-      animation: backgroundAnim 2s ease-in-out infinite alternate-reverse ;
-     }
-
-@keyframes backgroundAnim {
-   0% {     
-      opacity: 0;
-      transform: scale(1);
-      buttom: 15px;
-      width: 100%;
-   }
-   100% { 
-       opacity: 1;
-      transform: scale(50);
-    top: 10px;
-     width:5%; 
-
-   } }
-
-
-.homepagebtn{
+   .homepagebtn{
  background: #fbf9f9;
   color: #000000;
   font-weight: 500;
@@ -101,12 +77,12 @@ color: #14ccb4;
 text-decoration: none;
 }
 .homepagebtn:hover {
-   background-color:rgb(43, 166, 224);
-   color: #000000;
+   background-color:rgba(43, 167, 224, 0);
+   color: #0ddcbd;
    transform: scale(1.5);
  }
 .homepagebtn:hover a:active {
-   background-color: rgb(8, 6, 6);
+   background-color:rgba(43, 167, 224, 0.512);
    color: white; 
     box-shadow: 10 4px 10px rgb(7, 101, 120);
 } 
@@ -116,7 +92,7 @@ position: relative;
 color: #e5dede;
 width: 100%;
 }
-.carousel__section{
+.carousel_section{
    position: relative;
    height: 100%;
 background-color: #02020200;
@@ -125,19 +101,19 @@ padding: 5px;
 display: none;
 
 }
-.carousel__section--selected{ 
+.carousel_section--selected{ 
 display: block;
 
 }
-.carousel h1 {
+.carousel_section h1 {
 font-size: 45px;
 margin:0;
-color: #00000004;
+color: #ffffff;
 position: relative;
 text-align: center; 
 }
 
-.carousel__nav { 
+.carousel_nav { 
 height: 50px;
 width: 100%;
 padding-top: 1px;
@@ -147,8 +123,8 @@ text-align: center;
 color: #e5dede;
 }
 
-.carousel__button{ 
-width: 100px;
+.carousel_button{ 
+width: 70px;
 height: 30px;
 display: inline-block;
 background: #555;
@@ -157,46 +133,97 @@ margin: 15px;
 cursor: pointer;
 }
 
-.carousel__button--selected{
+.carousel_button--selected{
 background: #e5dede;
 }
 
-img{ 
-width: 100%;
-max-width: 400px;
-justify-content: center; 
-margin: 10px;
-
+.img-style{ 
+  border: 1px solid #3ccfed;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+#scrollToTopBtn{
+position: fixed;
+bottom: 50px;
+right: 150px;
+z-index: 99;
+outline: none;
+border:none;
+background-color:rgba(0, 0, 0, 0.658);
+color: #ffffff;
+cursor: pointer; 
+padding:20px;
+border-radius: 10px; 
+box-shadow:  2px 6px 20px rgb(16, 79, 124);
+font-size:50px; 
+transition:opacity 0.3s ease,transform 0.3s ease; 
 }
 
-@media screen and (min-width:400px) {
+
+#scrollToTopBtn a{ 
+background-color:rgba(129, 131, 132, 0);
+color: rgb(252, 251, 251);
+cursor: pointer; 
+}
+
+#scrollToTopBtn a:hover {
+background-color: #0b0b0b;
+color: #0b82b1;
+}
+
+@media only screen and (max-width: 760px)  {
 .container {
-   position:relative; 
-   height: 50%; 
+ position:relative; 
 }
-   .carousel {
-      width:auto;
-height:fit-content;
-position: relative; 
-    }
-.carousel__section{
-       width:auto;
-height:fit-content;
-position: relative;
-    }
-    .carousel__section h1{ 
-color: #e5dede;
-
-font-size: 45px;} 
-.carousel__section { 
-font-size: 20px;
+   
+.carousel{ 
+position: absolute;
 }
 
-
+.img-style{ 
+ width: calc(70% - 20px);
+}
+.homepagebtn{ 
+width: calc(70% - 20px);
+}
+#scrollToTopBtn{ 
+width: calc(70% - 20px);
+}
+.carousel_button { 
+position:relative; 
+}
+.info-container{ 
+position:relative; 
+}
 }
 
 
- 
+ @media screen and (min-width:300px) {
+.container {
+ position:relative; 
+}
+ .img-style{ 
+ width: calc(50% - 20px);
+}
+.homepagebtn{ 
+width: calc(50%- 20px);
+
+} 
+#scrollToTopBtn{ 
+width: calc(50% - 20px);
+}
+.carousel_button { 
+position:relative; 
+
+}
+.carousel{ 
+ position:relative; 
+}
+.info-container{ 
+width: calc(100% - 20px);
+}
+ }
 
 
 

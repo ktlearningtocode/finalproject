@@ -182,13 +182,13 @@ position: absolute;
 }
 
 .img-style{ 
- width: calc(70% - 20px);
+ width: calc(50% - 20px);
 }
 .homepagebtn{ 
 width: calc(70% - 20px);
 }
 #scrollToTopBtn{ 
-width: calc(70% - 20px);
+position:relative; 
 }
 .carousel_button { 
 position:relative; 

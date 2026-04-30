@@ -40,7 +40,7 @@ answers:[
 },
 
 {
-  question:"What is the ability to ensure that assets are viewable only by authorised people known as?",
+ question:"What is the ability to ensure that assets are viewable only by authorised people known as?",
 answers:[
 {text:"Planning and direction", correct:false}, 
 {text:"confidentiality", correct:true},
@@ -49,7 +49,7 @@ answers:[
 ] 
 },
  {
-  question:"In a DDOS attack what is compromised?",
+ question:"In a DDOS attack what is compromised?",
 answers:[
 {text:"Planning", correct:false}, 
 {text:"Directions", correct:false},
@@ -58,7 +58,7 @@ answers:[
 ] 
 },
  {
-  question:"What matches the technology that makes sure the correct individuals access the correct resources at the right times for the correct reasons?",
+ question:"What matches the technology that makes sure the correct individuals access the correct resources at the right times for the correct reasons?",
 answers:[
 {text:"Planning and direction", correct:false}, 
 {text:"Updates and availability", correct:false},
@@ -68,7 +68,7 @@ answers:[
 },
 
 {
-  question:"What is the weakness in a system known as?",
+ question:"What is the weakness in a system known as?",
 answers:[
 {text:"Vulnerability", correct:true}, 
 {text:"Updates and availability", correct:false},
@@ -77,7 +77,7 @@ answers:[
 ] 
 },
 {
-  question:"What is the course of action that identifies particular measures that can be used for particular stages of attack?",
+ question:"What is the course of action that identifies particular measures that can be used for particular stages of attack?",
 answers:[
 {text:"COA(cause of action)", correct:false}, 
 {text:"Information Gathering", correct:false},
@@ -86,7 +86,7 @@ answers:[
 ] 
 },
 {
-  question:"What does secuirty threat entail?",
+ question:"What does secuirty threat entail?",
 answers:[
 {text:"Entering a wrong password", correct:false}, 
 {text:"forgetting an email address", correct:false},
@@ -95,13 +95,40 @@ answers:[
 ] 
 },
 {
-  question:"What are three processes buisnesses include with cyber threat intellignce",
+ question:"What are three processes buisnesses include with cyber threat intellignce",
 answers:[
 {text:"Entering a wrong password, forgetting an email address and making a situation unsafe ", correct:false}, 
 {text:"Cyber kill chain, Attack Cycle and COA(cause of action)", correct:false},
 {text:"confidentiality, Updates and availability and Vulnerability", correct:false},
-{text:"Strategic level, operational level and tactical level", correct:true},
+{text:"Strategic, operational and tactical", correct:true},
 ] 
+},
+{
+question:"What are examples of toolsets used for threat investigation", 
+answers:[
+{text:"Entering a wrong password and forgetting an email address", correct:false}, 
+{text:"Cyber kill chain and Attack Cycle", correct:false},
+{text:"Malware Analysis and Malware search", correct:true},
+{text:"Strategic level and operational level", correct:false},
+] 
+},
+{
+question:"What are examples of Threat intelligence data origins", 
+answers:[
+{text:"Open source intelligence andDark web intelligence ", correct:true}, 
+{text:"Cyber kill chain and Attack Cycle", correct:false},
+{text:"Strategic level and operational level", correct:false},
+{text:"Malware Analysis and Malware search", correct:false},
+]
+}, 
+{
+question: "What is an example of a Specialist in cyber security", 
+answers:[
+{text:"Artificial intelligence and machine learning", correct:false}, 
+{text:"Data analytics", correct:false},
+{text:" Identity and Access Management", correct:true},
+{text:"Web Development", correct:false},
+]
 }
 ]; 
 

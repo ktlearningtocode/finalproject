@@ -41,10 +41,9 @@ body{
       }
 .container{
   width: 100%;
- margin:5px;
+ margin:10px;
  background: #cee7ef12;
- padding:2px;
- text-align: center;
+ padding:100px;
  border-radius: 5px;
  box-shadow: 2px 6px 20px rgb(15, 78, 250);
  backdrop-filter: blur(20px);
@@ -53,6 +52,7 @@ body{
 .container h1{ 
 font-size: 45px;
 position: absolute;
+text-align: center;
 top: 0;
 left: 10px;
 width: 100%;
@@ -60,31 +60,39 @@ color: #fefefe;
 border-right: 2px solid #000000;
 }
 
+ .info-container { 
+  margin:10px;
+ background: #00000000;
+ height: 100%;
+ padding-top:100px;
+ width: 100%;
+ border-radius: 5px;
+ box-shadow: 2px 6px 20px rgb(15, 78, 250);
+color: white;
 
-.container p{
-   font-size: 40px;
-   margin: 10px 0px;
-   flex-direction: row; 
-padding:min(5em, 10%);
-color: #ffffff;
+  }
+.info-container p { 
+ margin: 10px 10px 10px;
+font-size: 30px;
+text-align: left; 
 }
 
 #exploringbtn { 
-bottom: 20px;
+font-size: 50px;
 background: linear-gradient(70deg, #87959a15, #05b0ff4b);
 cursor: pointer; 
-padding:5px;
+margin-top:100px;
 border-radius: 5px; 
 box-shadow: 10 4px 10px #079ade9d;
 overflow-x: auto;
 transition: transform 1s;
 }
 #exploringbtn a { 
-   padding: 30px;
+   padding: 50px;
    text-decoration: none;
    color: rgb(246, 243, 243);
    display: block;
-   font-size: 20px;
+   font-size: 50px;
    background-color: transparent;
    box-shadow: 10 4px 10px rgb(36, 158, 182);
    }
@@ -130,13 +138,29 @@ box-shadow: 10 4px 10px rgb(36, 158, 182);
    color: rgb(0, 0, 0); } 
 
 
-@media screen and (min-width:400px) {
- 
- .container { 
-position:relative;
+@media only screen and (max-width: 760px)  { 
+  .container { 
+position: relative;
+}
+.topnav { 
+position: relative;
+}
+ .info-container { 
+position:relative; 
+}
+
+ }
+
+@media screen and (min-width:300px) {
+  .container { 
+width: calc(100% - 20px);
 }
  .topnav{ 
-  position:relative;
+width: calc(50%- 20px);
  } 
+
+  .info-container { 
+position:relative; 
+}
   
 }

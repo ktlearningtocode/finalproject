@@ -12,12 +12,12 @@
    0% {     
       opacity: 0;
       transform: scale(1);
-      buttom: 15px;
+      bottom: 15px;
       width: 100%;
    }
    100% { 
-       opacity: 1;
-      transform: scale(50);
+    opacity: 1;
+    transform: scale(50);
     top: 10px;
      width:5%; 
 
@@ -51,7 +51,7 @@ color: rgb(255, 255, 255);
    width: 100%;
    background-color: transparent;
    border: none;
-   border-bottom: 1px soild #22bce3;
+   border: 1px dashed #22bce3;
    padding-left: 1.5rem;
    font-size: 15px;}
 
@@ -87,7 +87,7 @@ font-size: 15px;
 .forgot-link { 
    text-align: right;
    font-size: 15px;
-margin-bottom: 15px 0 15px;
+margin: 15px 0 15px;
 color: #ffffff;
 }
 .forgot-link a { 
@@ -110,7 +110,7 @@ border-radius: 8px;
 cursor: pointer;
 color: #ffffff;
 transition: 0.9s;
-box-shadow: 10 4px 10px #079ade9d;
+box-shadow: 10px 4px 10px #079ade9d;
 }
  
 .login_btn:hover 
@@ -129,7 +129,7 @@ border-radius: 8px;
 cursor: pointer;
 color: #ffffff;
 transition: 0.9s;
-box-shadow: 10 4px 10px #079ade9d;
+box-shadow: 10px 4px 10px #079ade9d;
 }
 .register_btn:hover { 
  background: #666565;
@@ -143,7 +143,7 @@ font-size: 1.2em;
 padding: 10px 25px;
 border-radius: 10px;
 margin-bottom: 15px; 
-box-shadow: 10 4px 10px #079ade9d;
+box-shadow: 10px 4px 10px #079ade9d;
 }
 
 ul.topnav {
@@ -175,7 +175,7 @@ background-color: rgb(43, 166, 224);
    color: rgb(0, 0, 0);
 }
 
-ul.topnav li a:hover(active) {
+ul.topnav li a:hover:active {
 background-color: rgb(43, 166, 224);
    color: rgb(0, 0, 0);
 

@@ -17,6 +17,7 @@ color: #ffffff;
  background: #6566671a;
  padding:0px;
 width: 100%;
+scroll-behavior: smooth;
   }
   .container a { 
 font-size: 35px;
@@ -38,7 +39,7 @@ color: white;
 
   }
 .info-container p { 
- margin: 10px 10px 10px;
+ margin: auto;
 font-size: 30px;
 text-align: left; 
 }
@@ -63,6 +64,16 @@ font-size: 32px;
 box-shadow: #00FFFF;
 
   }
+.info-container a { 
+color: #ffffff;
+text-align: left;
+padding:10px;
+margin: 5px;
+}
+.info-container a:hover { 
+color: #00FFFF;
+font-size: 36px;
+}
 
    .homepagebtn{
  background: #fbf9f9;
@@ -149,20 +160,21 @@ background: #e5dede;
   padding: 5px;
   width: 150px;
 }
+
 #scrollToTopBtn{
 position: fixed;
-bottom: 50px;
-right: 150px;
+bottom: 200px;
+right: 50px;
 z-index: 99;
 outline: none;
 border:none;
 background-color:rgba(0, 0, 0, 0.658);
 color: #ffffff;
 cursor: pointer; 
-padding:20px;
+padding:5px;
 border-radius: 10px; 
 box-shadow:  2px 6px 20px rgb(16, 79, 124);
-font-size:50px; 
+font-size:35px; 
 transition:opacity 0.3s ease,transform 0.3s ease; 
 }
 

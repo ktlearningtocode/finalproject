@@ -3,72 +3,71 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body
-{ background:rgb(0, 0, 0);
-  }
+{ background:rgba(0, 0, 0, 0.886);
+  display: grid;
+  place-items:center;
+  justify-content:center;
+
+}
 
 .container{
-  margin:10px;
-  height:100%;
-  background: #00000000;
-  padding: 5px;;
-  text-align: center;
-  border-radius: 10px;
- box-shadow: 10px 4px 10px #00FFFF; 
-  text-align: center;
-  }
-
-
+  height:calc(100% - 2px);
+  width:calc(100% - 20px);
+  background: #000000e7;
+  padding:50px;
+  margin: auto;
+ }
 .homepagebtn{
- background: #fbf9f9;
-  color: #000000;
-  font-weight: 500;
-  width: 100%;
- box-shadow: 10px 4px 10px #00FFFF;  
-  padding: 5px;
-  margin: 5px; 
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s; 
-    font-size: 30px;  
-}
+ background: #fbf9f92a;
+ color: #000000;
+  font-size: 40px;  
+ font-weight: 500;
+ width: calc(100% - 65px);
+ box-shadow: 10px 4px 10px #ffffff;  
+ margin: 10px; 
+ text-align: center;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: all 0.3s; 
+  }
 .homepagebtn a { 
-color: #14ccb4;
+ color: #ffffff;
 text-decoration: none;
 }
 .homepagebtn:hover {
-   background-color:rgb(43, 166, 224);
-   color: #000000;
+   background-color:rgb(0, 0, 0);
+   color: #ffffff;
    transform: scale(1.5);
+   box-shadow: 10px 5px 10px #00FFFF;  
  }
 .homepagebtn:hover a:active {
-   background-color: rgb(8, 6, 6);
-   color: white; 
-    box-shadow: 10px 4px 10px rgb(7, 101, 120);
+   background-color: #000000;
+   color: rgb(255, 255, 255); 
+    box-shadow: 10px 4px 10px rgb(0, 0, 0);
 } 
 
-.app{ 
-  background:#00000000;
+.quiz-container{ 
+ background:#00000000;
   position: relative;
-width: 100%;
-height: 100%;
-margin: 2px; 
-padding-top:50px;
+width:calc(100% - 55px);
+height: calc(100% - 5px);
+margin-left: 2%; 
 border-radius: 10px;
-  box-shadow: 10px 4px 10px #00FFFF; 
 overflow: hidden;
+ box-shadow: 10px 5px 10px #ffffff;  
 }
 
-h1{
+.quiz-container h1{
 font-size: 45px;
-width: 100%;
+width: calc(100% - 5px);
 color: #ffffff;
 position: relative;
+text-align: center;
 }
 
-.quiz { 
-margin: 0 2rem; 
-
+.quiz{ 
+margin: 5px; 
+width: calc(100% - 5px);
 }
 h2{ 
 font-size: 40px;
@@ -76,25 +75,26 @@ color: #ffffff;
 font-weight: 400;
 }
 
-.btn { 
+.button { 
   background: #fbf9f9;
   color: #000000;
+  font-size: 50px;
   font-weight: 500;
-  width: 100%;
- box-shadow: 10px 4px 10px #00FFFF;  
+  cursor: pointer;
+  width: calc(100% - 25px);
   padding: 5px;
-  margin: 5px; 
+  margin: 5px;
   text-align: center;
   border-radius: 5px;
-  cursor: pointer;
   transition: all 0.3s; 
-    font-size: 50px;
+    
     }
-     .btn:hover:not([disabled]){
-        background: #000000;
+     .button:hover:not([disabled]){
+        background: #464646;
         color: rgb(255, 255, 255);
-        }
-        .btn:disabled{ 
+      transform: scale(1.25);
+      }
+        .button:disabled{ 
 cursor: no-drop;
         }
 
@@ -102,7 +102,7 @@ cursor: no-drop;
             background: #ffffff;
             color: #1b90b0 ;
             font-weight: 500;
-            width: 100%;
+            width: calc(100% - 15px);
             border: 0;
             padding: 10px;
             margin: 20px auto 0;
@@ -121,33 +121,33 @@ background: green;
 background: red;
 
   }
-  .backgroundAnim1{ 
-      position: absolute;
-      top: 75%;
-      left: 0;
-      width: 100%;
-      height: 10px; 
-       border-radius:10%;
-      background: #468f9542;
-      filter: blur(0.5px);
-      animation: backgroundAnim 5s ease-in-out infinite ;
-     }
 
+.backgroundAnim1{ 
+position: absolute;
+top:calc(100% - 1px);
+right: 0;
+width:20px;
+height: 20px;
+font-size: 15px; 
+border-radius: 10%;
+background: #ffffff3e;
+filter: blur(2px);
+animation: backgroundAnim 7s ease-in-out infinite alternate-reverse ;
+    }
 
 @keyframes backgroundAnim {
-   0% {     
-      opacity: 0;
-      transform: scale(1);
-      bottom: 15px;
-      width: 100%;
-   }
-   100% { 
-       opacity: 1;
-      transform: scale(5);
+0% {     
+    opacity: 0;
+    transform: scale(1);
+    bottom: 15px;
+    width: 75%;
+}
+100% { 
+    opacity: 1;
+    transform: scale(5);
     top: 10px;
-     width:5%; 
-
-   } }
+    width:2%; 
+} }
 
 
 @media screen and (min-width:400px) {

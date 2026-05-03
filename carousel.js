@@ -43,3 +43,19 @@ function topFunction() {
 document.body.scrollTop=0;
 document.documentElement.scrollTop=0; }
 
+
+const menuBtn =document.querySelectorAll("li"); 
+const sidenav =document.getElementById("sidenav");
+
+function openNav() { 
+document.getElementById("sidenav").style.width="calc(100% - 50px)";
+
+
+} 
+
+function closeNav(){ 
+document.getElementById("sidenav").style.width="0%";
+ 
+}
+
+menuBtn.forEach((button) => (button.onclick = () => closeNav()));

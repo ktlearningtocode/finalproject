@@ -136,6 +136,7 @@ const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons'); 
 const nextButton = document.getElementById('next-btn');
 
+
 let currentQuestionIndex= 0;
 let score =0; 
 
@@ -157,7 +158,7 @@ question;
 currentQuestion.answers.forEach(answer => { 
 const button = document.createElement ("button"); 
 button.innerHTML =answer.text; 
-button.classList.add("btn");
+button.classList.add("button");
 answerButtons.appendChild(button);
 if(answer.correct) { 
   button.dataset.correct = answer.correct;
@@ -196,7 +197,7 @@ resetState();
 questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`; 
 nextButton.innerHTML= "Retry";
 nextButton.style.display= "block" ;
-}
+ }
 
 function handleNextButton(){ 
 currentQuestionIndex++; 

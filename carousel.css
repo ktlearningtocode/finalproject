@@ -19,25 +19,22 @@ padding: 10px;
 
 
 }
-
 ul.topnav {
   display: flex;
 list-style-type: none;
 height: 25%;
 background-color: #000000;
 cursor: pointer; 
-
 }
 
 ul.topnav li a{
 color: #fcf9f9;
-padding: 10px 20px; 
+padding: 10px 10px 10px 10px; 
 text-decoration: none;
 text-align: center;
-font-size: 20px;
-border-radius: 10px;
+font-size: 15px;
+border-radius: 7px;
 transition: .3s;
-box-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 ul.topnav li a:active {
    background-color: rgb(43, 166, 224);

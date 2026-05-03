@@ -6,48 +6,45 @@ box-sizing: border-box;
 
 body{
 background-color: rgb(0, 0, 0);
-width: 100%;
+width: calc(100% - 1px);
 min-height: 100vh;
 color: #ffffff;
 }
 #scrollToTopBtn{
-position: fixed;
-bottom: 50px; 
-right: 150px;
+position:sticky; 
+top:0;
 z-index: 99;
 outline: none;
 border:none;
 background-color:rgba(0, 0, 0, 0.658);
 color: #ffffff;
 cursor: pointer; 
-padding:20px;
+padding:15px;
 border-radius: 10px; 
-box-shadow:  2px 6px 20px rgb(16, 79, 124);
-font-size:50px; 
-transition:opacity 0.3s ease,transform 0.3s ease; 
+box-shadow:20px 2px 25px rgb(16, 79, 124);
+font-size:18px; 
+transition:.5s;
 }
-
-
 #scrollToTopBtn a{ 
 background-color:rgba(129, 131, 132, 0);
 color: rgb(252, 251, 251);
 cursor: pointer; 
 }
 
-#scrollToTopBtn a:hover {
-background-color: #0b0b0b;
-color: #0b82b1;
+#scrollToTopBtn:hover {
+background-color: #ffffff;
+color: #000000;
+transform: scale(1.5);
 }
 
 .container{ 
- margin:0 auto;
- background: #656667;
- max-width:1440px;
- height: 600px;
- padding:0 24px;
- text-align: center;
-width: 100%;
- border-radius: 5px;
+margin:0 auto;
+background: #656667;
+height:calc(100% - 10px);
+padding:0 24px;
+text-align: center;
+width:calc(100% - 10px);
+border-radius: 5px;
 box-shadow: 20px 6px 20px rgb(0, 0, 0);
 justify-content:center;
 text-align: center;
@@ -64,58 +61,52 @@ margin-bottom: 30px;
 color: #ffffff;
 background-color: rgb(0, 0, 0);
 box-shadow: 10px 4px 10px rgba(16, 66, 120, 0.697);
- }
+}
 
 .feed-item { 
 margin-top: 100px;
-padding: 15px;
 text-align: left;
-background-color: rgb(0, 0, 0);
-box-shadow: 2px 6px 2px rgba(11, 62, 120, 0.655);
+padding: 40px 100px 100px;
+background-color: #56535361;
+box-shadow: 6px 6px 6px rgba(17, 63, 142, 0.556);
+transition: .3s;
+} 
 
-}
 .feed-item h2 { 
 font-size: 45px;
 margin: 50px;
 text-align: center;
 color: #fcf9f9;
 }
-.feed-item { 
-padding: 40px 100px 100px;
-background-color: #56535361;
-box-shadow: 6px 6px 6px rgba(17, 63, 142, 0.556);
-} 
 
 .feed-item p {
 margin: 10px 0;
 font-size: 15px;
-
 }
 .feed-item a{ 
 color: #fcf9f9;
-
 }
-.feed-item a:hover{ 
-text-decoration: underline;
+.feed-item:hover{ 
 color: #177c92;
 font-size: 55px;
+transform: scale(1.05);
 }
 
 .feed.link {
    text-decoration: underline; 
 color: #1962b0;
-
 }
 
 ul.topnav {
 list-style-type: none;
 margin:10px;
 padding:20px 20px 20px 20px;
-width:  calc(100% - 15px);
+width: calc(100% - 15px);
 height: 25%;
 background-color: #000000;
 cursor: pointer; 
 overflow: auto;
+overflow-x: hidden;
 }
 
 ul.topnav li a{
@@ -125,7 +116,8 @@ padding: 15px 10px 10px 10px;
 text-decoration: none;
 text-align: center;
 font-size: 20px;
- border-bottom: 1px dashed rgb(7, 101, 120);
+border-bottom: 1px dashed rgb(7, 101, 120);
+transition: .3s;
 }
 ul.topnav li a:active {
    background-color: rgb(43, 166, 224);
@@ -134,6 +126,9 @@ ul.topnav li a:active {
 ul.topnav li a:hover:not(.active){ 
 background-color: rgb(43, 166, 224);
    color: rgb(0, 0, 0);
+}
+ul.topnav li:hover{ 
+transform: scale(1.25);
 }
 
 .filtercontainer { 
@@ -145,7 +140,6 @@ padding:15px 0;
 margin-bottom: 30px;
 background-color: rgb(90, 88, 88);
 border-radius: 5%;
-
  }
 .filters{ 
 padding: 5px;
@@ -153,7 +147,6 @@ margin-top:5px;
 border-radius: 5%;
 background-color: rgb(0, 0, 0);
 box-shadow: 20px 6px 20px rgb(28, 74, 126);
-
 }
 
 .filters h2{ 
@@ -163,12 +156,11 @@ text-align: center;
 color: #fcf9f9;
 }
 .filterdata{
-   font-size: 35px;
+font-size: 35px;
 margin-top: 10px;
 padding: 20px;
 text-align: left;
 background-color: rgb(0, 0, 0); 
-
 }
 
 .filterdata h2 { 
@@ -177,15 +169,14 @@ margin: 5px;
 text-align: center;
 color: #fcf9f9;
 font-size: 35px;
-
 }
 
 .filterdata .text p { 
-   margin: 10px 10px 10px ;
+margin: 10px 10px 10px ;
 font-size: 10px;
 }
 .filterbuttons{ 
- margin: 10px;
+margin: 10px;
 font-size: 10px;
 }
 .filterbutton{ 
@@ -198,10 +189,12 @@ color: #ffffff;
 padding:0 8px;
 box-shadow: 20px 6px 20px rgb(28, 74, 126);
 background-color: #000000;
+transition: .3s;
 } 
 .filterbutton:hover{ 
-   color: #ffffff; 
-   background-color: #1962b0;
+color: #ffffff; 
+background-color: #1962b0;
+transform: scale(1.25);
 }
 .filterbutton.is-active{ 
 background-color:rgb(74, 120, 166) ;
@@ -235,67 +228,63 @@ padding: 15px;
 } 
 
 .post-preview {
-   overflow: hidden;
-   width: 100%;
-   text-align: center;
-   display: block;
-   margin: 0 auto;
-   height: 200px;
+overflow: hidden;
+width: 100%;
+text-align: center;
+display: block;
+margin: 0 auto;
+height: 200px;
    }
 .post-tag { 
-   display: inline-block;
-   margin-left: 10px;
-   margin-bottom: 10px;
-   padding: 0 8px;
-   color: #fcf9f9;
-   font-size: 15px;
-   border-radius: 25px;
+display: inline-block;
+margin-left: 10px;
+margin-bottom: 10px;
+padding: 0 8px;
+color: #fcf9f9;
+font-size: 15px;
+border-radius: 25px;
    }
 
-    
-   .backgroundAnim1{ 
-      position: absolute;
-      top: 75%;
-      left: 0;
-      width: 50%;
-      height: 20px; 
-       border-radius: 100%;
-      background: #036c7311;
-      filter: blur(2px);
-      animation: backgroundAnim 2s ease-in-out infinite alternate-reverse ;
-     }
+  .backgroundAnim1{ 
+position: absolute;
+top:calc(100% - 1px);
+right: 0;
+width:20px;
+height: 20px;
+font-size: 15px; 
+border-radius: 10%;
+background: #ffffff3e;
+filter: blur(2px);
+animation: backgroundAnim 7s ease-in-out infinite alternate-reverse ;
+    }
 
 
 @keyframes backgroundAnim {
-   0% {     
-      opacity: 0;
-      transform: scale(1);
-      bottom: 15px;
-      width: 100%;
-   }
-   100% { 
-       opacity: 1;
-      transform: scale(50);
+0% {     
+    opacity: 0;
+    transform: scale(1);
+    bottom: 15px;
+    width: 75%;
+}
+100% { 
+    opacity: 1;
+    transform: scale(5);
     top: 10px;
-     width:5%; 
-
-   } }
+    width:2%; 
+} }
 
 
   @media screen and (min-width:400px) {
- 
- .container { 
+  .container { 
 position:relative;
 height: 100%;
  }
-
  .topnav{ 
-  position:relative;
+position:relative;
 } 
 .feed-container{ 
 position:relative;
 height: 100%;
-
 }
 .feed-item p {
 margin: 10px 0;
@@ -304,6 +293,6 @@ margin: 10px 0;
 margin: 1px;
 }
 .scrollToTopBtn{
-   position:relative;
+position:relative;
 }
 }

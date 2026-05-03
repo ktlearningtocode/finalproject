@@ -25,61 +25,52 @@
  
 </ul>  
      </header>
+<div class="container">
+   <div class="form-container">
 
-   <div class= "container" id="signin"> 
- <h1 class="form-title" >Login</h1> 
-      <div class="form-box.login" id="form-box.login">
-        <form method="post" action="loggedin.php"> 
-              
-         <div class="input-group"> 
-             <input type="text" name="email" placeholder="Enter your Email Address" required />  
-       <label for="email">Email</label></div>
-         <div class="input-group"> 
-        <input type="password" id="password" name="password" placeholder="Enter your Password" required /> 
-      <label for="password">Password</label> </div>         
-      
-     
-                    </form>
-                <div class="forgot-link">
-    <a href="#">Forgot password?</a>
-</div>
+    <form id="login-form" class="form">
+ <h1 class="form-title">Login</h1> 
+ <div class="form-inputs"> 
+<div class="input-box"> 
 
-<input type="submit" class="login_btn" value="login" name="login">Login</input>
-
-</div> </div>
- <div class= "container" id="signup"> 
-<div class="form-box.register" id="form-box.register">
-  <form method="post" action=""> 
-<h1 class="form-title">Register</h1>
-    <div class="input-group"> 
-    <input type= "text" name="name" id="name" placeholder="Name" required>  
-<label for ="name">Name</label>
-</div>
-
-<div class="input-group"> 
-<input type="email" name="email" id="email" placeholder="Email" required/> 
-<label for ="email">Email</label></div>
-
-
-<div class="input-group"> 
-<input type="password" id="pass" name="pass" placeholder="Enter your Password" required /> 
-<label for ="password">Password</label>
-
-</div>
-
-<input type="submit" class="register_btn" value="Register" name="Register"> Resgister</input>
+  <input type="text" class="input-field" placeholder="Email Address" required />  
   
+  </div>
+  <div class="input-box"> 
+  <input type="password" id="password" class="input-field" placeholder="Enter your Password" required /> 
+    </div> </div></form>
+                <div class="forgot-link">
+    <a href="#">Forgot password?</a></div>
+<button type="submit" class="input-submit" id="login_btn">Login</button>
 
+
+
+<form id="register-form" class="form">
+  <h1 class="form-title">Register</h1>
+<div class="form-inputs"> 
+<div class="input-box"> 
+
+ <input type= "text" class="input-field" id="name" placeholder="Name" required>  </div>
+
+<div class="input-box"> 
+
+<input type="email" class="input-field" id="email" placeholder="Email" required/> </div>
+<div class="input-box"> 
+
+<input type="password" id="pass" class="input-field" placeholder="Enter your Password" required /> </div>
+</div>
+
+
+<button type="submit" class="input-submit" id="register_btn">Resgister</button>
+  
 </form>  
+</div>
+
 
  
-
 <div class="backgroundAnim1">cyber threat intelligence</div>
-
+</div>
   
-</div>
-
-</div>
 
  <script defer src="script.js"></script>
 
